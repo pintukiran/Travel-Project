@@ -1,0 +1,61 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    overflow-x: hidden;
+}
+body{
+    background-image: url('https://img.freepik.com/premium-photo/modern-city-skyline_11208-282.jpg');
+    background-size: cover;
+}
+.container{
+    height: 460%;
+    width:  460%;
+    position: relative;
+    animation: planeAnimate 15s linear;
+}
+@keyframes planeAnimate{
+    from{
+        left:100vw;
+    }
+    to{
+        left: -40vw;
+    }
+}
+
+@keyframes plane{
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 15%;
+        transform:translateY(0) ;
+    }
+    45%{
+        transform:translateY(-70px) ;
+    }
+    65%{
+    
+        transform:translateY(-150px) ;
+    }
+    100%{
+        left: 100%;
+        transform:translateY(-250px) ;
+    }
+   
+    
+}
+
+
+
+
+@keyframes plane{
+    100%{
+        transform: translateX(0px) translateY(0px) rotate(0deg);
+    }
+    30%{
+        transform: translateX(-500px) translateY(30px) rotate(0deg);
+    }
+    100%{
+        transform: translateY(-1500px) translateY(-200px) rotate(20deg);
+    }
+}
